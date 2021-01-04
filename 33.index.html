@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+.full-screen{
+position:fixed;
+top:0;
+left:0;
+width:1%;
+height:70%;
+background:rgba(0,0,0,0.9);
+z-index:10;
+display:flex;
+justify-content:center;
+align-items:center;
+
+p{
+color:green;
+margin:5px;
+cursor:pointer;
+}
+p:hover{
+background:yellow;
+}
+
+</style>
+</head>
+
+<body> 
+
+<p>金歡喜禮包商品說明</p>
+<br>貓狗的愛無限大，就讓今年跟超大貓咪狗狗一起揭開序幕吧！</br>
+<br>選擇「金歡喜」套組－2組春聯＋10組紅包袋，讓你歡喜過新年~</br>
+
+<br>春聯｜一組兩張｜尺寸:15.8*15.8cm｜高彩輕塗紙</br>
+<br>紅包袋｜一組三封｜直式-每封9*19.6cm  橫式-9*17cm｜萊妮紙</br>
+<br>※春聯及紅包袋背面皆有介紹協會理念及捐款用途等文字，還請參考輪播商品照，再行評估是否可接受喔！</br>
+<br>※因拍攝或電腦螢幕顯示器不同，照片與義賣品可能有色差。</br>
+
+<div class="product" align=center>
+<div class="full-screen">
+<h1>浪浪走春趣</h1>
+<img src="1.png">
+</div>
+<script>
+$("p").click(function(){
+            $(".full-screen").slideToggle();
+});
+$("img").click(function(){
+            $(".full-screen").slideToggle();
+});
+</script>
+
+</body>
+</html>
